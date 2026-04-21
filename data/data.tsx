@@ -1,7 +1,7 @@
 import { FaChurch, FaHome, FaUtensils } from "react-icons/fa";
 
-export const day=[25,8,2026]
-export const theWeddingDate = new Date("2026-06-17T12:00:00");
+export const day=[10,7,2026]
+export const theWeddingDate = new Date("2026-07-10T12:00:00");
 
 export const names=["Գայանե  և Անդրանիկ"]
 export const txt1="Գեղեցիկ օր և մենք կդառնանք ամուսիններ"
@@ -37,7 +37,7 @@ export const program = [
   },
 ];
 
-export const rsvp='https://script.google.com/macros/s/AKfycbxvAjNBA0eONEpt508FyqFwJCk4upDN-sMb3UUZkRx9c91HF7iE9ltzDRoEUBFuXJ0VRA/exec'
+export const rsvp='https://script.google.com/macros/s/AKfycbzyfro3JAC3RbjDI90Eg0wsanX9o0lGnQuXLZo9jlUKfxrnSoDCqZwH0F5Yl-pX_SMxwg/exec'
 
 
 
