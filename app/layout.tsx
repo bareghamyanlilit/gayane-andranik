@@ -1,0 +1,35 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import { names } from "@/data/data";
+
+export const metadata: Metadata = {
+  title: names[0],
+  description: names[0],
+  openGraph: {
+    title: `${ names[0]} հարսանեկան հրավիրատոմս`,
+    description: "Հարսանեկան հրավիրատոմս",
+    url: "https://wedding-invitation-2-smoky.vercel.app/",
+    siteName: names[0],
+    images: [
+      {
+        url: "/first.jpg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body style={{ whiteSpace: "pre-line" }}>{children}</body>
+    </html>
+  );
+}

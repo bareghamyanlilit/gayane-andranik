@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: italic;
+  src: url("../fonts/MK_Ani_U-Italic.ttf");
+}
+
+body {
+  font-family: italic;
+}
+.saveTheDate {
+  font-family: cursive;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
