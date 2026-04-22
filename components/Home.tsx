@@ -23,24 +23,29 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   return (
     <div className="max-w-xl m-auto h-screen overflow-x-hidden">
-      {/* open */}
-      <div
-        className={`bg-no-repeat justify-self-center bg-center  bg-cover text-xl fixed z-100 w-xl h-full flex flex-col gap-10 justify-center items-center text-white transition ${open ? "hidden -z-10" : ""}`}
-        style={{
-          backgroundImage: "url('/first0.jpeg')",
-        }}
-      >
-        <p className="text-center">Գայանեի և Անդրանիկի <br /> հարսանեկան հրավիրատոմս</p>
-        <button
-          onClick={() => {
-            setIsPlaying(!isPlaying);
-            setOpen(!open);
-          }}
-          className="p-2 border rounded-xl"
-        >
-          Բացել
-        </button>
-      </div>
+      {/* open */}<div
+  className={`bg-no-repeat bg-center bg-cover text-xl fixed inset-0 z-[999] flex flex-col gap-10 justify-center items-center text-white transition duration-500 ${
+    open ? "opacity-0 pointer-events-none" : "opacity-100"
+  }`}
+  style={{
+    backgroundImage: "url('/first0.jpeg')",
+    height: "100dvh",
+  }}
+>
+  <p className="text-center px-4">
+    Գայանեի և Անդրանիկի <br /> հարսանեկան հրավիրատոմս
+  </p>
+
+  <button
+    onClick={() => {
+      setIsPlaying(!isPlaying);
+      setOpen(!open);
+    }}
+    className="p-3 border rounded-xl  bg-white/10 active:scale-95 transition"
+  >
+    Բացել
+  </button>
+</div>
       {/* music button */}
       <div>
         <button
