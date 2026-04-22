@@ -238,6 +238,7 @@ export default function AttendanceGuests() {
           <input
             type="number"
             name="guestCount"
+          placeholder="Քանակ"
             value={formData.guestCount}
             onChange={handleInputChange}
             className="w-full p-3 border rounded-lg"

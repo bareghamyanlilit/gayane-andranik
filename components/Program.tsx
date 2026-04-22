@@ -5,11 +5,11 @@ import { FaMapMarkedAlt } from "react-icons/fa";
 export function Program() {
   return (
     <section className="bg-[#ffffff] text-[#1b1b1b] px-6 py-12">
-      <motion.h2 {...anim} className="relative z-0 text-center text-2xl mb-10 ">
+      <motion.h2 {...anim} className="relative z-0 text-center tracking-widest text-3xl mb-10 ">
         Ժամանակացույց
-        <p className=" absolute w-max -z-1 text-5xl -top-1 left-1/2 -translate-x-1/2 text-[#1b1b1b13] ">
+        {/* <p className=" absolute w-max -z-1 text-5xl -top-1 left-1/2 -translate-x-1/2 text-[#1b1b1b13] ">
           Ժամանակացույց
-        </p>
+        </p> */}
       </motion.h2>
 
       {program.map((item, i) => (
