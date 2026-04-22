@@ -7,27 +7,21 @@ export const names=["Գայանե  և Անդրանիկ"]
 export const txt1="Գեղեցիկ օր և մենք կդառնանք ամուսիններ"
 export const txt2Title="Սիրելի՛ ընկերներ և բարեկամներ"
 export const txt2Descr="Սիրով հրավիրում ենք Ձեզ մասնակցելու մեր կյանքի կարևոր և հիշարժան օրվան"
-export const txt3="Խնդրում ենք նախապես տեղեկացնել Ձեր մասնակցության մասին մինչև Մայիսի 15-ը"
+export const txt3="Խնդրում ենք նախապես տեղեկացնել Ձեր մասնակցության մասին մինչև Հունիսի 10-ը"
 
 export const programImgs=['/ekexeci.jpg','/restoran.jpg']
 export const program = [
-  {
-    icon: <FaHome />,
-    time: "12:00",
-    title: "Փեսայի տուն",
-    address: "Երևան",
-  },
-  {
-    icon: <FaHome />,
-    time: "13:00",
-    title: "Հարսնացուի տուն",
-    address: "Երևան",
-  },
   {
     icon: <FaChurch />,
     time: "12:00",
     title: "Պսակադրություն",
     address: "Սուրբ Գայանե եկեղեցի",
+  },
+  {
+    icon: <FaHome />,
+    time: "13:00",
+    title: "Փեսայի տուն",
+    address: "https://yandex.com/maps/org/157304007599?si=v8rn2aa9n4dmqw67k4xnc8gda4",
   },
   {
     icon: <FaUtensils />,

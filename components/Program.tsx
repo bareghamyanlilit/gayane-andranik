@@ -31,7 +31,7 @@ const ProgramItem = ({ icon, time, title, address }) => {
   const img = getImage(title);
 
   return (
-    <div className="my-8 flex flex-col items-center text-xl">
+    <div className="mt-8 flex flex-col items-center text-xl">
       <motion.p {...anim} className="text-4xl">
         {icon}
       </motion.p>
@@ -39,15 +39,16 @@ const ProgramItem = ({ icon, time, title, address }) => {
         {time}
       </motion.p>
       <motion.h3 {...anim}>{title}</motion.h3>
-      <motion.p {...anim} className="text-sm opacity-80">
+      {title != "Փեսայի տուն" && <motion.p {...anim} className="text-sm opacity-80">
         {address}
-      </motion.p>
+      </motion.p>}
+      
 
       {img && <img src={img} className="my-4 max-w-full rounded" />}
 
       <motion.a
         {...anim}
-        href={`https://www.google.com/maps/search/${address}`}
+        href={`${title != "Փեսայի տուն"?"https://www.google.com/maps/search/":""}${address}`}
         target="_blank"
         className="inline-flex items-center gap-2 px-4 py-1.5 text-sm"
       >
