@@ -19,6 +19,12 @@ export const program = [
   },
   {
     icon: <FaHome />,
+    time: "14:00",
+    title: "Հարսի տուն",
+    address: "https://yandex.com/maps/105883/khankendi/?ll=46.748218%2C39.819078&mode=whatshere&whatshere%5Bpoint%5D=46.748130%2C39.818812&whatshere%5Bzoom%5D=18.267328&z=18",
+  },
+  {
+    icon: <FaHome />,
     time: "15:00",
     title: "Փեսայի տուն",
     address: "https://yandex.com/maps/org/157304007599?si=v8rn2aa9n4dmqw67k4xnc8gda4",

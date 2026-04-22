@@ -20,8 +20,27 @@ import AttendanceGuests from "./RSVP";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [open, setOpen] = useState(false);
   return (
     <div className="max-w-xl m-auto h-screen overflow-x-hidden">
+      {/* open */}
+      <div
+        className={`bg-no-repeat justify-self-center bg-center text-xl fixed z-100 w-xl h-full flex flex-col gap-10 justify-center items-center text-white transition ${open ? "hidden -z-10" : ""}`}
+        style={{
+          backgroundImage: "url('/first0.jpeg')",
+        }}
+      >
+        <p className="text-center">Գայանեի և Անդրանիկի <br /> հարսանեկան հրավիրատոմս</p>
+        <button
+          onClick={() => {
+            setIsPlaying(!isPlaying);
+            setOpen(!open);
+          }}
+          className="p-2 border rounded-xl"
+        >
+          Բացել
+        </button>
+      </div>
       {/* music button */}
       <div>
         <button
