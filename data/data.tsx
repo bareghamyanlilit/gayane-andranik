@@ -19,7 +19,7 @@ export const program = [
   },
   {
     icon: <FaHome />,
-    time: "13:00",
+    time: "15:00",
     title: "Փեսայի տուն",
     address: "https://yandex.com/maps/org/157304007599?si=v8rn2aa9n4dmqw67k4xnc8gda4",
   },
