@@ -42,7 +42,7 @@ const ProgramItem = ({ icon, time, title, address }) => {
         {time}
       </motion.p>
       <motion.h3 {...anim}>{title}</motion.h3>
-      {title != "Փեսայի տուն" && title != "Հարսի տուն" && (
+      {title != "Փեսայի տուն" && (
         <motion.p {...anim} className="text-sm opacity-80">
           {address}
         </motion.p>
@@ -52,7 +52,7 @@ const ProgramItem = ({ icon, time, title, address }) => {
 
       <motion.a
         {...anim}
-        href={`${(title != "Փեսայի տուն" && title != "Հարսի տուն" )? "https://www.google.com/maps/search/" : ""}${address}`}
+        href={`${title != "Փեսայի տուն"? "https://www.google.com/maps/search/" : ""}${address}`}
         target="_blank"
         className="inline-flex items-center gap-2 px-4 py-1.5 text-sm"
       >

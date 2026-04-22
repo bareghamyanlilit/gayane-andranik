@@ -25,7 +25,7 @@ export default function Home() {
     <div className="max-w-xl m-auto h-screen overflow-x-hidden">
       {/* open */}
       <div
-        className={`bg-no-repeat justify-self-center bg-center text-xl fixed z-100 w-xl h-full flex flex-col gap-10 justify-center items-center text-white transition ${open ? "hidden -z-10" : ""}`}
+        className={`bg-no-repeat justify-self-center bg-center bg-cover text-xl fixed z-100 w-xl h-full flex flex-col gap-10 justify-center items-center text-white transition ${open ? "hidden -z-10" : ""}`}
         style={{
           backgroundImage: "url('/first0.jpeg')",
         }}
@@ -67,7 +67,7 @@ export default function Home() {
         }}
       >
         <div>
-          <h1 className=" text-shadow-2xs   rounded-2xl text-3xl md:text-7xl">
+          <h1 className=" text-shadow-2xs   rounded-2xl text-3xl md:text-5xl">
             {names[0]}
           </h1>
           <p>{txt1}</p>
